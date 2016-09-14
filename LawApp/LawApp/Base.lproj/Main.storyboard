@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eIh-ba-DBP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile-->
+        <scene sceneID="gtT-zb-J1Y">
+            <objects>
+                <viewController id="hJ1-Nq-MZa" customClass="Profile" customModule="LawApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTD-Do-9YU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uqi-p8-EnV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qml-kf-iGw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="VmX-Xl-Koh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3a-fr-NeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1374" y="-245"/>
+        </scene>
+        <!--Current Students-->
+        <scene sceneID="WPv-6V-TiZ">
+            <objects>
+                <viewController id="d2U-F7-6BB" customClass="CurrentStudents" customModule="LawApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IpZ-fn-a6l"/>
+                        <viewControllerLayoutGuide type="bottom" id="a6c-a8-AAJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8dx-ft-nwF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxe-UD-JQT">
+                                <rect key="frame" x="20" y="72" width="161" height="30"/>
+                                <state key="normal" title="Which Lawyer are You?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ2-1e-oWY">
+                                <rect key="frame" x="20" y="110" width="168" height="30"/>
+                                <state key="normal" title="Sample Study Pathways"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irL-T7-MUQ">
+                                <rect key="frame" x="20" y="148" width="140" height="30"/>
+                                <state key="normal" title="Your Study Pathway"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Current Students" id="n9d-Uy-Wcl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRD-0S-gEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="445"/>
+        </scene>
+        <!--Home Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LawApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomePage" customModule="LawApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,12 +69,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNs-Qe-dcY">
-                                <rect key="frame" x="265" y="28" width="71" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="be7-VE-cZs">
                                 <rect key="frame" x="227" y="240" width="147" height="120"/>
                                 <subviews>
@@ -31,6 +77,7 @@
                                         <state key="normal" title="Profile"/>
                                         <connections>
                                             <action selector="changePageToProfile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qUD-Ku-KCn"/>
+                                            <segue destination="hJ1-Nq-MZa" kind="show" id="mKS-vn-bB7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJX-FY-Zq2">
@@ -38,6 +85,7 @@
                                         <state key="normal" title="Prospective Students"/>
                                         <connections>
                                             <action selector="changePageToProspective:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b7i-he-8fo"/>
+                                            <segue destination="mY2-4T-r4Y" kind="show" id="cVk-N2-WD9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OR5-fq-rZf">
@@ -45,6 +93,7 @@
                                         <state key="normal" title="Current Students"/>
                                         <connections>
                                             <action selector="changePageToCurrent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bw4-CL-8DU"/>
+                                            <segue destination="d2U-F7-6BB" kind="show" id="zyc-Wv-Ywq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sA-Ix-pxf">
@@ -52,10 +101,17 @@
                                         <state key="normal" title="Exiting Students"/>
                                         <connections>
                                             <action selector="changePageToExiting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rcb-ZG-aQD"/>
+                                            <segue destination="x2K-Jl-pK8" kind="show" id="EVG-19-3r8"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNs-Qe-dcY">
+                                <rect key="frame" x="265" y="28" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -65,9 +121,90 @@
                             <constraint firstItem="be7-VE-cZs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oA7-eV-wUv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8Lq-NG-6Wv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1374" y="445"/>
+        </scene>
+        <!--Future Students-->
+        <scene sceneID="SIR-1t-Tgy">
+            <objects>
+                <viewController id="mY2-4T-r4Y" customClass="FutureStudents" customModule="LawApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GNp-XY-c1P"/>
+                        <viewControllerLayoutGuide type="bottom" id="uZt-5A-Bqc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="56l-Mz-ki4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5w5-zZ-fVB">
+                                <rect key="frame" x="20" y="110" width="202" height="30"/>
+                                <state key="normal" title="How to Get Accepted at UWA"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTl-cU-5uZ">
+                                <rect key="frame" x="20" y="148" width="105" height="30"/>
+                                <state key="normal" title="Is Law for You?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeL-N8-OWd">
+                                <rect key="frame" x="20" y="72" width="92" height="30"/>
+                                <state key="normal" title="What is Law?"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Future Students" id="cPM-em-9uz"/>
+                    <connections>
+                        <outlet property="WhatisLawButton" destination="QeL-N8-OWd" id="bUd-xg-Ll9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wrw-PU-bU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2045" y="445"/>
+        </scene>
+        <!--Exiting Students-->
+        <scene sceneID="yFK-T6-jvH">
+            <objects>
+                <viewController id="x2K-Jl-pK8" customClass="ExitingStudents" customModule="LawApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="De0-Mj-M89"/>
+                        <viewControllerLayoutGuide type="bottom" id="IOl-RJ-xIL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yvj-lH-NNM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIv-2F-P1V">
+                                <rect key="frame" x="20" y="72" width="143" height="30"/>
+                                <state key="normal" title="Your Career Pathway"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Exiting Students" id="Cfz-dg-iFq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNK-vE-GKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1374" y="1123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SuH-Uh-DGZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eIh-ba-DBP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ozh-l1-NUw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nrg-5o-fRF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZx-2w-aAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="-245"/>
         </scene>
     </scenes>
 </document>

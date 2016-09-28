@@ -21,6 +21,7 @@ class HomePage: UIViewController, UINavigationControllerDelegate {
     }
     
     @IBAction func changePageToProfile(sender: UIButton) {
+        //performSegueWithIdentifier("HomeToProfile", sender: self)
     }
     
     @IBAction func changePageToProspective(sender: UIButton) {

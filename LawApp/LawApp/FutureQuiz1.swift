@@ -161,4 +161,8 @@ class FutureQuiz1: UIViewController, UITextFieldDelegate {
         doQuestions()
     }
 
+    @IBAction func HomeButton(sender: UIButton) {
+        performSegueWithIdentifier("FutureQuizToHome", sender: self)
+    }
+    
 }

@@ -49,7 +49,6 @@ class CurrentQuiz2: UIViewController {
      }
     
     func doQuestions(){
-        NSLog(String(currentQuestion))
         clearRadios()
         switch currentQuestion{
         case 0:
@@ -116,7 +115,6 @@ class CurrentQuiz2: UIViewController {
             WarningLabel.hidden = false
             return
         }
-        NSLog(String(currentQuestion))
         if(currentQuestion < 6){
             currentQuestion+=1
             doQuestions()
@@ -125,5 +123,8 @@ class CurrentQuiz2: UIViewController {
         }
     }
     
+    @IBAction func toHome(sender: UIButton) {
+        performSegueWithIdentifier("CurrentQuiz2ToHome", sender: self)
+    }
     
 }

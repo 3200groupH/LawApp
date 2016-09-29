@@ -18,5 +18,8 @@ class Profile: UIViewController {
     
     // MARK: - Navigation
 
+    @IBAction func ToHome(sender: AnyObject) {
+        performSegueWithIdentifier("ProfileToHome", sender: self)
+    }
     
 }

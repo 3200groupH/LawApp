@@ -18,14 +18,14 @@ class FutureQuiz1: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var DefaultStack: UIStackView!
     @IBOutlet weak var Question5Stack: UIStackView!
     var currentQuestion = 0
-    var answers = Array<String>(count: 6, repeatedValue: "")
+    var answers = Array<String>(repeating: "", count: 6)
     
     //MARK: Defaults
     override func viewDidLoad() {
         super.viewDidLoad()
         TextField.delegate = self
         currentQuestion = 0
-        Question5Stack.hidden = true
+        Question5Stack.isHidden = true
         doQuestions()
         
     }
@@ -38,15 +38,15 @@ class FutureQuiz1: UIViewController, UITextFieldDelegate {
     
     //MARK: UITextFieldDelegate
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         //Hide Keyboard
         textField.resignFirstResponder()
         return true
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
         if(textField.text != ""){
-            NextButton.hidden = false
+            NextButton.isHidden = false
         }
     }
     
@@ -55,32 +55,32 @@ class FutureQuiz1: UIViewController, UITextFieldDelegate {
     
     
     func doQuestions(){
-        NextButton.hidden = true
+        NextButton.isHidden = true
         switch(currentQuestion){
         case 0:
             QuestionLabel.text = "1. What's Your Favourite Colour?"
-            NextButton.setTitle("Next", forState:UIControlState.Normal)
+            NextButton.setTitle("Next", for:UIControlState())
             break
         case 1:
             QuestionLabel.text = "2. What's Your Favourite TV Show?"
-            NextButton.setTitle("Next", forState:UIControlState.Normal)
+            NextButton.setTitle("Next", for:UIControlState())
             break
         case 2:
             QuestionLabel.text = "3. I'm a Little Obsessed With ..."
-            NextButton.setTitle("Next", forState:UIControlState.Normal)
+            NextButton.setTitle("Next", for:UIControlState())
             break
         case 3:
             QuestionLabel.text = "4. Do You Know What Lawyers Do?"
-            NextButton.setTitle("Next", forState:UIControlState.Normal)
+            NextButton.setTitle("Next", for:UIControlState())
             break
         case 4:
-            DefaultStack.hidden = true
-            Question5Stack.hidden = false
+            DefaultStack.isHidden = true
+            Question5Stack.isHidden = false
             
             break
         case 5:
             QuestionLabel.text = "6. If I Didn't do Law, I Would ..."
-            NextButton.setTitle("Finish", forState:UIControlState.Normal)
+            NextButton.setTitle("Finish", for:UIControlState())
             break
             
             
@@ -88,7 +88,7 @@ class FutureQuiz1: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func NextButtonPush(sender: UIButton) {
+    @IBAction func NextButtonPush(_ sender: UIButton) {
         if(currentQuestion != 4){
             answers[currentQuestion] = TextField.text!
         }
@@ -101,64 +101,68 @@ class FutureQuiz1: UIViewController, UITextFieldDelegate {
             for i in 0...5 {
                 NSLog(String(answers[i]))
             }
-            performSegueWithIdentifier("EndOfFutureQuiz", sender: self)
+            performSegue(withIdentifier: "EndOfFutureQuiz", sender: self)
         }
         
     }
 
-    @IBAction func DayMonday(sender: UIButton) {
+    @IBAction func DayMonday(_ sender: UIButton) {
         answers[4] = "Monday"
         currentQuestion+=1
-        Question5Stack.hidden = true
-        DefaultStack.hidden = false
+        Question5Stack.isHidden = true
+        DefaultStack.isHidden = false
         doQuestions()
     }
     
-    @IBAction func DayTuesday(sender: UIButton) {
+    @IBAction func DayTuesday(_ sender: UIButton) {
         answers[4] = "Tuesday"
         currentQuestion+=1
-        Question5Stack.hidden = true
-        DefaultStack.hidden = false
+        Question5Stack.isHidden = true
+        DefaultStack.isHidden = false
         doQuestions()
     }
 
-    @IBAction func DayWednesday(sender: UIButton) {
+    @IBAction func DayWednesday(_ sender: UIButton) {
         answers[4] = "Wednesday"
         currentQuestion+=1
-        Question5Stack.hidden = true
-        DefaultStack.hidden = false
+        Question5Stack.isHidden = true
+        DefaultStack.isHidden = false
         doQuestions()    }
 
-    @IBAction func DayThursday(sender: UIButton) {
+    @IBAction func DayThursday(_ sender: UIButton) {
         answers[4] = "Thursday"
         currentQuestion+=1
-        Question5Stack.hidden = true
-        DefaultStack.hidden = false
+        Question5Stack.isHidden = true
+        DefaultStack.isHidden = false
         doQuestions()
     }
     
-    @IBAction func DayFriday(sender: UIButton) {
+    @IBAction func DayFriday(_ sender: UIButton) {
         answers[4] = "Friday"
         currentQuestion+=1
-        Question5Stack.hidden = true
-        DefaultStack.hidden = false
+        Question5Stack.isHidden = true
+        DefaultStack.isHidden = false
         doQuestions()
     }
     
-    @IBAction func DaySaturday(sender: UIButton) {
+    @IBAction func DaySaturday(_ sender: UIButton) {
         answers[4] = "Saturday"
         currentQuestion+=1
-        Question5Stack.hidden = true
-        DefaultStack.hidden = false
+        Question5Stack.isHidden = true
+        DefaultStack.isHidden = false
         doQuestions()
     }
 
-    @IBAction func DaySunday(sender: UIButton) {
+    @IBAction func DaySunday(_ sender: UIButton) {
         answers[4] = "Sunday"
         currentQuestion+=1
-        Question5Stack.hidden = true
-        DefaultStack.hidden = false
+        Question5Stack.isHidden = true
+        DefaultStack.isHidden = false
         doQuestions()
     }
 
+    @IBAction func HomeButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "FutureQuizToHome", sender: self)
+    }
+    
 }

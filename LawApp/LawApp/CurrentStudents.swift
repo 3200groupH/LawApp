@@ -18,5 +18,12 @@ class CurrentStudents: UIViewController {
     
     // MARK: - Navigation
 
+    @IBAction func StartQuiz1(_ sender: UIButton) {
+        performSegue(withIdentifier: "StartCurrentQuiz1", sender: self)
+    }
+    
+    @IBAction func ToHome(_ sender: UIButton) {
+        performSegue(withIdentifier: "CurrentToHome", sender: self)
+    }
    
 }

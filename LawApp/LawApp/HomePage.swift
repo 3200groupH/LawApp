@@ -20,17 +20,20 @@ class HomePage: UIViewController, UINavigationControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func changePageToProfile(sender: UIButton) {
-        //performSegueWithIdentifier("HomeToProfile", sender: self)
+    @IBAction func HomeToFuture(_ sender: UIButton) {
+        performSegue(withIdentifier: "HomeToFuture", sender: self)
     }
     
-    @IBAction func changePageToProspective(sender: UIButton) {
+    @IBAction func ToCurrent(_ sender: UIButton) {
+        performSegue(withIdentifier: "HomeToCurrent", sender: self)
     }
     
-    @IBAction func changePageToCurrent(sender: UIButton) {
+    @IBAction func ToExiting(_ sender: UIButton) {
+        performSegue(withIdentifier: "HomeToExiting", sender: self)
     }
     
-    @IBAction func changePageToExiting(sender: UIButton) {
+    @IBAction func ToProfile(_ sender: AnyObject) {
+        performSegue(withIdentifier: "HomeToProfile", sender: self)
     }
     
 }

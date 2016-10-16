@@ -10,8 +10,8 @@ import UIKit
 
 class RoundedCornerButton: UIButton {
     override func awakeFromNib() {
-        layer.cornerRadius = 4
-        backgroundColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 0.9)
+        layer.cornerRadius = 15
+        backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
             self.setTitleColor(UIColor.black, for: .normal)
           }
     

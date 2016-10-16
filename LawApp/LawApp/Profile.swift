@@ -10,11 +10,20 @@ import UIKit
 
 class Profile: UIViewController {
 
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBAction func nameEditButton(_ sender: UIButton) {
+        //set the label equal to the text field value
+        nameLabel.text = nameTextField.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
     
     // MARK: - Navigation
 

@@ -623,7 +623,7 @@
                                     <action selector="NextPress:" destination="eIK-uA-ucW" eventType="touchUpInside" id="8eW-tL-eL1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdd-sa-A9V">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdd-sa-A9V" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
                                 <state key="normal" title="Home"/>
                                 <connections>
                                     <action selector="toHome:" destination="eIK-uA-ucW" eventType="touchUpInside" id="rHb-k6-qPh"/>
@@ -641,6 +641,7 @@
                             <constraint firstItem="g01-qp-Cdi" firstAttribute="trailing" secondItem="9tH-6P-VtE" secondAttribute="trailingMargin" id="2hD-4t-V6R"/>
                             <constraint firstAttribute="trailing" secondItem="M0k-7z-jgU" secondAttribute="trailing" id="3g2-bW-30S"/>
                             <constraint firstItem="g01-qp-Cdi" firstAttribute="top" secondItem="isE-GV-oSJ" secondAttribute="bottom" constant="30" id="5bB-ho-Nvt"/>
+                            <constraint firstItem="8Qn-ws-u3A" firstAttribute="leading" secondItem="9tH-6P-VtE" secondAttribute="leadingMargin" id="8nf-P0-YJG"/>
                             <constraint firstItem="O2J-bx-ZpZ" firstAttribute="top" secondItem="Zhy-oV-Mn9" secondAttribute="bottom" constant="16" id="DBV-gB-5gT"/>
                             <constraint firstItem="pdd-sa-A9V" firstAttribute="top" secondItem="isE-GV-oSJ" secondAttribute="bottom" id="DUv-S9-NTZ"/>
                             <constraint firstItem="Zhy-oV-Mn9" firstAttribute="top" secondItem="g01-qp-Cdi" secondAttribute="bottom" constant="16" id="Hzf-QQ-uZQ"/>
@@ -654,6 +655,7 @@
                             <constraint firstItem="M0k-7z-jgU" firstAttribute="top" secondItem="9tH-6P-VtE" secondAttribute="top" id="URL-KB-pAm"/>
                             <constraint firstItem="O2J-bx-ZpZ" firstAttribute="centerX" secondItem="9tH-6P-VtE" secondAttribute="centerX" id="XuZ-lW-hsv"/>
                             <constraint firstItem="g01-qp-Cdi" firstAttribute="centerX" secondItem="9tH-6P-VtE" secondAttribute="centerX" id="Z6D-SQ-B5o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Qn-ws-u3A" secondAttribute="trailing" id="bOb-hn-33u"/>
                             <constraint firstItem="pdd-sa-A9V" firstAttribute="leading" secondItem="9tH-6P-VtE" secondAttribute="leadingMargin" id="cyM-SU-vLb"/>
                             <constraint firstItem="g01-qp-Cdi" firstAttribute="leading" secondItem="9tH-6P-VtE" secondAttribute="leadingMargin" id="fss-xE-t2I"/>
                             <constraint firstItem="pdd-sa-A9V" firstAttribute="leading" secondItem="9tH-6P-VtE" secondAttribute="leadingMargin" id="pMG-SN-zcq"/>
@@ -823,7 +825,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="court_iphone" translatesAutoresizingMaskIntoConstraints="NO" id="JHB-xG-ck1"/>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Lot-E7-HCO">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Lot-E7-HCO">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxe-UD-JQT" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
                                         <state key="normal" title="What Type of Lawyer do I Want to Be?"/>
@@ -895,7 +897,7 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3qN-BG-ghx">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3qN-BG-ghx">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rau-I3-M1K" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
                                         <state key="normal" title="Future Students"/>
@@ -922,6 +924,12 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="6B2-en-PXG" firstAttribute="width" secondItem="3qN-BG-ghx" secondAttribute="width" id="Mpx-8k-q0l"/>
+                                    <constraint firstItem="rau-I3-M1K" firstAttribute="width" secondItem="3qN-BG-ghx" secondAttribute="width" id="SDM-5f-b3k"/>
+                                    <constraint firstItem="NQG-Y1-xyL" firstAttribute="width" secondItem="3qN-BG-ghx" secondAttribute="width" id="c3h-sh-ghB"/>
+                                    <constraint firstItem="97M-Hb-sTA" firstAttribute="width" secondItem="3qN-BG-ghx" secondAttribute="width" id="wuT-HD-Ukc"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -932,7 +940,7 @@
                             <constraint firstItem="CNs-Qe-dcY" firstAttribute="centerX" secondItem="ZJG-hY-FBo" secondAttribute="centerX" id="DuB-hN-owb"/>
                             <constraint firstItem="3qN-BG-ghx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FVz-CN-ZBy"/>
                             <constraint firstItem="CNs-Qe-dcY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="QfO-kM-XbH"/>
-                            <constraint firstItem="3qN-BG-ghx" firstAttribute="top" secondItem="CNs-Qe-dcY" secondAttribute="bottom" constant="30" id="WkE-Ys-YEC"/>
+                            <constraint firstItem="3qN-BG-ghx" firstAttribute="top" secondItem="CNs-Qe-dcY" secondAttribute="bottom" constant="64" id="WkE-Ys-YEC"/>
                             <constraint firstItem="ZJG-hY-FBo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Z0x-7p-Ea0"/>
                             <constraint firstAttribute="trailing" secondItem="ZJG-hY-FBo" secondAttribute="trailing" id="wvU-VR-32A"/>
                         </constraints>
@@ -975,7 +983,7 @@
                                     <action selector="ToHome:" destination="m0v-yJ-E5h" eventType="touchUpInside" id="cMx-Qf-KPG"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dJ9-pV-JzA">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dJ9-pV-JzA">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtF-rC-1lH" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
                                         <state key="normal" title="Pathways"/>
@@ -997,7 +1005,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dJ9-pV-JzA" firstAttribute="top" secondItem="6V1-V9-p9n" secondAttribute="bottom" constant="16" id="4DD-GV-DR2"/>
+                            <constraint firstItem="dJ9-pV-JzA" firstAttribute="top" secondItem="6V1-V9-p9n" secondAttribute="bottom" constant="64" id="4DD-GV-DR2"/>
                             <constraint firstItem="6V1-V9-p9n" firstAttribute="leading" secondItem="QJf-7J-URj" secondAttribute="leadingMargin" id="Jhp-OR-Lzs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dJ9-pV-JzA" secondAttribute="trailing" id="KEp-8a-b7C"/>
                             <constraint firstItem="ykt-TJ-PMR" firstAttribute="top" secondItem="uyf-V4-clr" secondAttribute="bottom" id="Nzh-2L-rfU"/>
@@ -1071,7 +1079,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yxV-hn-80b"/>
-        <segue reference="G1x-j3-T5z"/>
-        <segue reference="BgM-P7-FF7"/>
+        <segue reference="Aot-42-U8K"/>
+        <segue reference="jiH-1V-vig"/>
     </inferredMetricsTieBreakers>
 </document>

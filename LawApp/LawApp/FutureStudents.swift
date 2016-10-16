@@ -25,5 +25,24 @@ class FutureStudents: UIViewController {
         performSegue(withIdentifier: "FutureToHome", sender: self)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let dest = segue.destination as! webviewController
+        
+        switch segue.identifier! {
+            case "pathways":
+                dest.urlString = "http://www.law.uwa.edu.au/students/legal-qualifying-degree/manage_enrolment"
+            case "lsat":
+                dest.urlString = "http://www.law.uwa.edu.au/courses/juris-doctor-jd/about-the-lsat"
+            case "info":
+                dest.urlString = "http://www.law.uwa.edu.au/students/registration-information-session"
+            case "blackstone":
+                dest.urlString = "http://www.blackstone.asn.au"
+            case "apply":
+                dest.urlString = "http://www.law.uwa.edu.au/courses/juris-doctor-jd/how-to-apply-for-the-juris-doctor/"
+        default:
+            return
+        }
+    }
 
 }

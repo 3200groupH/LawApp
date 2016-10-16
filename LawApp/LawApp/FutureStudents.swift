@@ -25,8 +25,5 @@ class FutureStudents: UIViewController {
         performSegue(withIdentifier: "FutureToHome", sender: self)
     }
 
-    @IBAction func ToQuiz1(_ sender: UIButton) {
-        performSegue(withIdentifier: "ToFutureQuiz1", sender: self)
-    }
 
 }

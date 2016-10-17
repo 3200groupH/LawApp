@@ -27,18 +27,22 @@ class FutureStudents: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let dest = segue.destination as! webviewController
         
         switch segue.identifier! {
             case "pathways":
+                let dest = segue.destination as! webviewController
                 dest.urlString = "http://www.law.uwa.edu.au/students/legal-qualifying-degree/manage_enrolment"
             case "lsat":
+                let dest = segue.destination as! webviewController
                 dest.urlString = "http://www.law.uwa.edu.au/courses/juris-doctor-jd/about-the-lsat"
             case "info":
+                let dest = segue.destination as! webviewController
                 dest.urlString = "http://www.law.uwa.edu.au/students/registration-information-session"
             case "blackstone":
+                let dest = segue.destination as! webviewController
                 dest.urlString = "http://www.blackstone.asn.au"
             case "apply":
+                let dest = segue.destination as! webviewController
                 dest.urlString = "http://www.law.uwa.edu.au/courses/juris-doctor-jd/how-to-apply-for-the-juris-doctor/"
         default:
             return

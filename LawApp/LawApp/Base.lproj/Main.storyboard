@@ -1053,7 +1053,7 @@
                                     <navigationItem id="tA0-bN-My3">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="PsZ-Qc-5Cn">
                                             <connections>
-                                                <segue destination="m0v-yJ-E5h" kind="show" id="EZa-cJ-aLU"/>
+                                                <segue destination="m0v-yJ-E5h" kind="show" identifier="" id="EZa-cJ-aLU"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

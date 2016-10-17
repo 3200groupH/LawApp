@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -981,18 +981,33 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtF-rC-1lH" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
                                         <state key="normal" title="Pathways"/>
+                                        <connections>
+                                            <segue destination="9qQ-rZ-3QU" kind="show" identifier="pathways" id="hu1-lU-rDR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guw-X5-Ujn" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
                                         <state key="normal" title="The LSAT"/>
+                                        <connections>
+                                            <segue destination="9qQ-rZ-3QU" kind="show" identifier="lsat" id="3ua-gL-ZV8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foP-Mk-rfF" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
                                         <state key="normal" title="Information Sessions"/>
+                                        <connections>
+                                            <segue destination="9qQ-rZ-3QU" kind="show" identifier="info" id="qrx-eS-geH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztP-jn-uFa" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
                                         <state key="normal" title="Blackstone Pre-Law"/>
+                                        <connections>
+                                            <segue destination="9qQ-rZ-3QU" kind="show" identifier="blackstone" id="4kF-tT-FUe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQV-wX-KzA" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
                                         <state key="normal" title="Apply Online"/>
+                                        <connections>
+                                            <segue destination="9qQ-rZ-3QU" kind="show" identifier="apply" id="XNi-Wm-qnC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1018,6 +1033,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nj2-OP-kw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2081" y="445"/>
+        </scene>
+        <!--Webview Controller-->
+        <scene sceneID="7Tu-kL-quO">
+            <objects>
+                <viewController id="9qQ-rZ-3QU" customClass="webviewController" customModule="LawApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Blv-VV-lsi"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Ak-24-whn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F6B-1E-4DE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efP-At-eTM">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="tA0-bN-My3">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="PsZ-Qc-5Cn">
+                                            <connections>
+                                                <segue destination="m0v-yJ-E5h" kind="show" identifier="" id="EZa-cJ-aLU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Jn-Wu-xUS">
+                                <frame key="frameInset" minY="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="1Jn-Wu-xUS" id="2Ic-x1-Jhv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbU-2e-6O7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2853.5999999999999" y="445.72713643178412"/>
         </scene>
         <!--Exiting Students-->
         <scene sceneID="yFK-T6-jvH">
@@ -1075,6 +1131,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="vHq-ZL-qUA"/>
         <segue reference="KQo-tu-Pcl"/>
+        <segue reference="EZa-cJ-aLU"/>
+        <segue reference="XNi-Wm-qnC"/>
         <segue reference="jiH-1V-vig"/>
     </inferredMetricsTieBreakers>
 </document>

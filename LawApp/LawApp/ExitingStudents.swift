@@ -18,8 +18,5 @@ class ExitingStudents: UIViewController {
     
     // MARK: - Navigation
     
-    @IBAction func ToHome(_ sender: UIButton) {
-        performSegue(withIdentifier: "ExitingToHome", sender: self)
-    }
 
 }

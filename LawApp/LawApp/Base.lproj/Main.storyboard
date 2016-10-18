@@ -939,9 +939,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_iphone" translatesAutoresizingMaskIntoConstraints="NO" id="xlS-gn-0yy"/>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwW-Tq-fSZ" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Ixq-dR-ux5"/>
-                                </constraints>
                                 <state key="normal" title="Future Students">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -950,9 +947,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RZ-Th-1Th" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="7nE-xT-1Rt"/>
-                                </constraints>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -961,9 +955,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2F-Aq-Kez" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Y2s-KC-OYy"/>
-                                </constraints>
                                 <state key="normal" title="Exiting Students">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -972,9 +963,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sJ-uD-3CK" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="E8K-JJ-6dD"/>
-                                </constraints>
                                 <state key="normal" title="Current Students">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -985,18 +973,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KwW-Tq-fSZ" firstAttribute="leading" secondItem="exr-ED-9tP" secondAttribute="leadingMargin" constant="14" id="LdJ-35-x0F"/>
-                            <constraint firstAttribute="trailing" secondItem="xlS-gn-0yy" secondAttribute="trailing" id="LpV-He-bmU"/>
-                            <constraint firstItem="8sJ-uD-3CK" firstAttribute="leading" secondItem="exr-ED-9tP" secondAttribute="leadingMargin" constant="34" id="Npj-p4-kUz"/>
-                            <constraint firstItem="xlS-gn-0yy" firstAttribute="leading" secondItem="exr-ED-9tP" secondAttribute="leading" id="OrU-gc-OK6"/>
-                            <constraint firstItem="5RZ-Th-1Th" firstAttribute="top" secondItem="J3l-B7-g7Q" secondAttribute="bottom" id="PLG-c8-hKu"/>
-                            <constraint firstItem="KwW-Tq-fSZ" firstAttribute="top" secondItem="exr-ED-9tP" secondAttribute="top" constant="170" id="Rz4-Ko-Ury"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="l2F-Aq-Kez" secondAttribute="trailing" constant="16" id="bjX-Sj-d1A"/>
-                            <constraint firstItem="xlS-gn-0yy" firstAttribute="top" secondItem="exr-ED-9tP" secondAttribute="top" id="dff-2D-hDU"/>
-                            <constraint firstItem="5RZ-Th-1Th" firstAttribute="leading" secondItem="exr-ED-9tP" secondAttribute="leadingMargin" id="kiU-Rv-jTo"/>
-                            <constraint firstItem="l2F-Aq-Kez" firstAttribute="top" secondItem="exr-ED-9tP" secondAttribute="top" constant="332" id="qNM-oE-P4X"/>
-                            <constraint firstItem="u3w-Cf-7EO" firstAttribute="top" secondItem="8sJ-uD-3CK" secondAttribute="bottom" constant="103" id="vm4-vG-dOV"/>
-                            <constraint firstItem="xlS-gn-0yy" firstAttribute="bottom" secondItem="u3w-Cf-7EO" secondAttribute="top" id="wki-yb-FJX"/>
+                            <constraint firstItem="l2F-Aq-Kez" firstAttribute="width" secondItem="xlS-gn-0yy" secondAttribute="height" multiplier="160:667" id="06a-cF-0zf"/>
+                            <constraint firstItem="KwW-Tq-fSZ" firstAttribute="width" secondItem="xlS-gn-0yy" secondAttribute="height" multiplier="160:667" id="1Mw-Cs-2Sg"/>
+                            <constraint firstItem="u3w-Cf-7EO" firstAttribute="top" secondItem="8sJ-uD-3CK" secondAttribute="bottom" constant="162" id="2MX-wJ-61O"/>
+                            <constraint firstItem="8sJ-uD-3CK" firstAttribute="width" secondItem="xlS-gn-0yy" secondAttribute="height" multiplier="160:667" id="3ug-rA-4et"/>
+                            <constraint firstItem="8sJ-uD-3CK" firstAttribute="leading" secondItem="exr-ED-9tP" secondAttribute="leadingMargin" id="4vi-Ya-Q1d"/>
+                            <constraint firstItem="5RZ-Th-1Th" firstAttribute="width" secondItem="xlS-gn-0yy" secondAttribute="height" multiplier="60:667" id="8tA-jh-tco"/>
+                            <constraint firstItem="KwW-Tq-fSZ" firstAttribute="leading" secondItem="exr-ED-9tP" secondAttribute="leadingMargin" id="AVj-x1-pF2"/>
+                            <constraint firstItem="l2F-Aq-Kez" firstAttribute="top" secondItem="J3l-B7-g7Q" secondAttribute="bottom" constant="241" id="BWX-p0-ge3"/>
+                            <constraint firstItem="l2F-Aq-Kez" firstAttribute="trailing" secondItem="exr-ED-9tP" secondAttribute="trailingMargin" id="EFC-hC-xaN"/>
+                            <constraint firstAttribute="trailing" secondItem="xlS-gn-0yy" secondAttribute="trailing" id="EYO-1o-Adz"/>
+                            <constraint firstItem="KwW-Tq-fSZ" firstAttribute="top" secondItem="5RZ-Th-1Th" secondAttribute="bottom" constant="90" id="F6T-w8-O8V"/>
+                            <constraint firstItem="5RZ-Th-1Th" firstAttribute="leading" secondItem="exr-ED-9tP" secondAttribute="leadingMargin" id="Gu6-Xe-uM6"/>
+                            <constraint firstItem="5RZ-Th-1Th" firstAttribute="top" secondItem="J3l-B7-g7Q" secondAttribute="bottom" id="Mna-QX-vuE"/>
+                            <constraint firstItem="xlS-gn-0yy" firstAttribute="top" secondItem="exr-ED-9tP" secondAttribute="top" id="Tjj-sW-DKy"/>
+                            <constraint firstItem="u3w-Cf-7EO" firstAttribute="top" secondItem="xlS-gn-0yy" secondAttribute="bottom" id="h1V-7r-Q16"/>
+                            <constraint firstItem="xlS-gn-0yy" firstAttribute="leading" secondItem="exr-ED-9tP" secondAttribute="leading" id="pR1-08-hOi"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1209,11 +1201,11 @@
         <image name="winthrop_iphone" width="862" height="1533"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yxV-hn-80b"/>
-        <segue reference="Aot-42-U8K"/>
-        <segue reference="yOy-NX-Bgu"/>
-        <segue reference="GW5-Kh-W5J"/>
+        <segue reference="oQS-dA-Pd3"/>
         <segue reference="N1z-OO-p8I"/>
+        <segue reference="K3A-bd-8y3"/>
+        <segue reference="wdv-Vv-PjC"/>
+        <segue reference="yOy-NX-Bgu"/>
         <segue reference="BgM-P7-FF7"/>
     </inferredMetricsTieBreakers>
 </document>

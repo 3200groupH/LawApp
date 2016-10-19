@@ -23,7 +23,8 @@ class CurrentStudents: UIViewController {
     }
     
     @IBAction func ToHome(_ sender: UIButton) {
-        performSegue(withIdentifier: "CurrentToHome", sender: self)
+        dismiss(animated: true, completion: nil)
+        //performSegue(withIdentifier: "CurrentToHome", sender: self)
     }
    
 }

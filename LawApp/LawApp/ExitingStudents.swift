@@ -18,8 +18,9 @@ class ExitingStudents: UIViewController {
     
     // MARK: - Navigation
     
-    @IBAction func ToHome(_ sender: UIButton) {
-        performSegue(withIdentifier: "ExitingToHome", sender: self)
+    @IBAction func goBack(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+
     }
 
 }

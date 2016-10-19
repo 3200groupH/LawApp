@@ -9,14 +9,8 @@
 import UIKit
 
 class Profile: UIViewController {
-
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet weak var nameTextField: UITextField!
     
-    @IBAction func nameEditButton(_ sender: UIButton) {
-        //set the label equal to the text field value
-        nameLabel.text = nameTextField.text
-    }
+    var answers = Array<String>(repeating: "", count: 9)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +22,10 @@ class Profile: UIViewController {
     // MARK: - Navigation
 
     @IBAction func ToHome(_ sender: AnyObject) {
-        performSegue(withIdentifier: "ProfileToHome", sender: self)
+        dismiss(animated: true, completion: nil)
+        //performSegue(withIdentifier: "ProfileToHome", sender: self)
     }
+
+    
     
 }

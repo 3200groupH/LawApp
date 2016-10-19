@@ -30,6 +30,8 @@
 		CE9009A81D86C6B500B79A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9009A71D86C6B500B79A30 /* Assets.xcassets */; };
 		CE9009AB1D86C6B500B79A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9009A91D86C6B500B79A30 /* LaunchScreen.storyboard */; };
 		CE9009B61D86C6B500B79A30 /* LawAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9009B51D86C6B500B79A30 /* LawAppTests.swift */; };
+		F90A5D5B1DB4C20A001300F6 /* webviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A5D5A1DB4C20A001300F6 /* webviewController.swift */; };
+		F941BE781DB6F47F0046DCDF /* templateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F941BE771DB6F47F0046DCDF /* templateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		CE9009B11D86C6B500B79A30 /* LawAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LawAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9009B51D86C6B500B79A30 /* LawAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawAppTests.swift; sourceTree = "<group>"; };
 		CE9009B71D86C6B500B79A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F90A5D5A1DB4C20A001300F6 /* webviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webviewController.swift; sourceTree = "<group>"; };
+		F941BE771DB6F47F0046DCDF /* templateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = templateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				94F3F1461D9904A4007FDD25 /* FutureStudents.swift */,
 				CE9009A01D86C6B400B79A30 /* AppDelegate.swift */,
 				CE9009A41D86C6B500B79A30 /* Main.storyboard */,
+				F941BE771DB6F47F0046DCDF /* templateView.swift */,
+				F90A5D5A1DB4C20A001300F6 /* webviewController.swift */,
 				940BDF9E1DB370ED00AD1EC0 /* RoundedCornerButton.swift */,
 				94609DB21DB21035008795FF /* AboutPol.swift */,
 				94609DB41DB21045008795FF /* AboutFam.swift */,
@@ -255,12 +261,14 @@
 				940BDF9F1DB370ED00AD1EC0 /* RoundedCornerButton.swift in Sources */,
 				9455FFC21D87FAC90045A805 /* CurrentStudents.swift in Sources */,
 				94F3F14B1D9B9DAD007FDD25 /* CurrentQuiz1.swift in Sources */,
+				F941BE781DB6F47F0046DCDF /* templateView.swift in Sources */,
 				94F3F14F1D9BDF7E007FDD25 /* CurrentQuiz2.swift in Sources */,
 				94F3F1471D9904A4007FDD25 /* FutureStudents.swift in Sources */,
 				94609DBF1DB22D1B008795FF /* ProfileQuiz.swift in Sources */,
 				94609DAD1DB20F0F008795FF /* AboutEnv.swift in Sources */,
 				9455FFC01D87FAB40045A805 /* Profile.swift in Sources */,
 				94609DB31DB21035008795FF /* AboutPol.swift in Sources */,
+				F90A5D5B1DB4C20A001300F6 /* webviewController.swift in Sources */,
 				94609DB51DB21045008795FF /* AboutFam.swift in Sources */,
 				94609DB71DB21058008795FF /* AboutAca.swift in Sources */,
 				94F3F1491D990805007FDD25 /* FutureQuiz1.swift in Sources */,

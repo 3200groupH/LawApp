@@ -18,5 +18,9 @@ class ExitingStudents: UIViewController {
     
     // MARK: - Navigation
     
+    @IBAction func goBack(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+
+    }
 
 }

@@ -150,7 +150,8 @@ class ProfileQuiz: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func HomeButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "ProfileQuizToHome", sender: self)
+        dismiss(animated: true, completion: nil)
+        //performSegue(withIdentifier: "ProfileQuizToHome", sender: self)
     }
     
     

@@ -17,5 +17,6 @@ class RoundedCornerButton: UIButton {
         self.setTitleColor(UIColor.lightGray, for: .normal)
     }
     
+    
 }
 

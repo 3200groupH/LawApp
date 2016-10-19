@@ -201,7 +201,7 @@ class CurrentQuiz2: UIViewController {
     }
     
     @IBAction func toHome(_ sender: UIButton) {
-        performSegue(withIdentifier: "CurrentQuiz2ToHome", sender: self)
+performSegue(withIdentifier: "CurrentQuiz2ToHome", sender: self)
     }
     
 }

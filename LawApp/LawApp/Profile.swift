@@ -22,7 +22,8 @@ class Profile: UIViewController {
     // MARK: - Navigation
 
     @IBAction func ToHome(_ sender: AnyObject) {
-        performSegue(withIdentifier: "ProfileToHome", sender: self)
+        dismiss(animated: true, completion: nil)
+        //performSegue(withIdentifier: "ProfileToHome", sender: self)
     }
 
     

@@ -27,9 +27,10 @@ class webviewController : UIViewController {
         let url = URL(string: urlString)
         let request = URLRequest(url: url!)
         webview?.loadRequest(request)
-        
-        
-        
+    }
+    
+    @IBAction func goBack(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

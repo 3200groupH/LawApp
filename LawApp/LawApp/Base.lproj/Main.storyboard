@@ -955,7 +955,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2F-Aq-Kez" customClass="RoundedCornerButton" customModule="LawApp" customModuleProvider="target">
-                                <state key="normal" title="Exiting Students">
+                                <state key="normal" title="Graduating Students">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -973,7 +973,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="l2F-Aq-Kez" firstAttribute="width" secondItem="xlS-gn-0yy" secondAttribute="height" multiplier="160:667" id="06a-cF-0zf"/>
+                            <constraint firstItem="l2F-Aq-Kez" firstAttribute="width" secondItem="xlS-gn-0yy" secondAttribute="height" multiplier="180:667" id="06a-cF-0zf"/>
                             <constraint firstItem="KwW-Tq-fSZ" firstAttribute="width" secondItem="xlS-gn-0yy" secondAttribute="height" multiplier="160:667" id="1Mw-Cs-2Sg"/>
                             <constraint firstItem="u3w-Cf-7EO" firstAttribute="top" secondItem="8sJ-uD-3CK" secondAttribute="bottom" constant="162" id="2MX-wJ-61O"/>
                             <constraint firstItem="8sJ-uD-3CK" firstAttribute="width" secondItem="xlS-gn-0yy" secondAttribute="height" multiplier="160:667" id="3ug-rA-4et"/>
@@ -1201,7 +1201,7 @@
         <image name="winthrop_iphone" width="862" height="1533"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yxV-hn-80b"/>
+        <segue reference="oQS-dA-Pd3"/>
         <segue reference="Aot-42-U8K"/>
         <segue reference="jiH-1V-vig"/>
         <segue reference="yOy-NX-Bgu"/>
